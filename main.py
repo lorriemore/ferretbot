@@ -1,8 +1,8 @@
-import discord
-from discord.ext import commands
 import os
 import asyncio
 from dotenv import load_dotenv
+import discord
+from discord.ext import commands
 
 # list cogs here
 extensions = [
@@ -24,7 +24,7 @@ async def load_extensions():
         try:
             await bot.load_extension(x)
         except Exception as e:
-            raise Exception(f'{e}: failed to load extension {x}.')
+            raise Exception(f'{e}: failed to load extension {x}.') from e
 
 # initialise bot
 async def main():
