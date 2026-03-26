@@ -1,7 +1,7 @@
 [project]
-name = "book-club-bot"
+name = "ferretbot"
 version = "0.1.0"
-description = "Add your description here"
+description = "A loosely mustelid-themed Discord bot written with discord.py"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
